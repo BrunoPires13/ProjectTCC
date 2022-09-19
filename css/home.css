@@ -1,0 +1,390 @@
+/* CSS da página do home */
+
+/* Cores */
+:root{
+    --primary: #fff;
+    --secondary: #A6A6A6;
+    --accent: #F36008;
+    --test: blue;
+}
+
+
+
+
+body{
+    margin:0;
+    background-image: linear-gradient(
+        90deg, #232326, #131314);
+        
+    overflow-x: hidden;
+}
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu';
+  
+  
+  
+}
+
+/* Scroll da página */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0D0D0D;
+    border-right: 1px #373739 solid;
+}
+
+/* Configurações dos textos do cabeçalho */
+a {
+    text-decoration: none;
+    transition: 0.3s;
+    color: #737373;
+    margin-left: 5px;
+}
+
+/* Configurações dos textos do cabeçalho - (Depois) */
+a:hover {
+    color: #fff; 
+}
+
+/* Configurações do texto - Project TCC */
+p {
+    color: var(--secondary);
+}
+
+/* Configurações doe ocultar */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Configurações de organização da página */
+.container {
+    max-width: 1350px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: start;
+    align-items: center;
+   
+}
+
+/* Configurações da ocupação do site todo */
+header {
+    background-color: linear-gradient(90deg, #262626, #0D0D0D);
+    min-height: 100vh;
+    color: #fff;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Configurações da ocupação do site todo */
+header main {
+    width: 100%;
+    margin: 0 0 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+/* Configurações da ocupação do cabeçalho e da parte central */
+nav .container,
+.header-body .container {
+    padding: 1.65em 2.5em;
+}
+
+/* iLume - Tamanho */
+.iLume {
+    font-size: 3em;
+    font-weight: 600;
+}
+
+/* iLume - Cor */
+#menu-btn {
+    color: #737373;
+    transition: 0.3s;
+}
+
+/* Configurações do cabeçalho */
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Linha de destaque no cabeçalho */
+.link-active {
+    color: #F36008;
+    border-bottom: 2px #F36008 solid;
+}
+
+/* Configurações do cabeçalho lateral */
+.menu-btn {
+    background: #0D0D0D;
+    backdrop-filter: blur(10px);
+    padding: 2.2em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Configurações do cabeçalho lateral - Menu */
+.menu-btn:hover {
+    background: none;
+}
+
+/* Configurações da localização do cabeçalho lateral - Menu */
+nav .menu-btn {
+    display: none;
+    padding: 0;
+    justify-self: end;
+}
+
+/* Configurações dos icons laterais */
+aside {
+    background: #232326;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    border-right: 1px #373739 solid;
+    position: relative;
+    z-index: 1;
+}
+
+/* Configurações dos icons laterais - Altura */
+.social {
+    padding-bottom: 1em;
+}
+
+/* Configurações dos icons */
+.sup{
+    cursor: pointer;
+}
+
+/* Configurações dos icons (Depois) */
+.sup:hover{
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+/* Configurações do icon - Acess */
+.supp{
+    margin-left: 3.5px;
+    cursor: pointer;
+}
+
+/* Configurações do icon - Acess (Depois) */
+.supp:hover{
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+/* Configurações da separação dos icons */
+.social li {
+    margin: 1.2em 0;
+}
+
+/* Configurações do cabeçalho interno */
+.menu {
+    background: #0D0D0D;
+    padding: 2em;
+    height: 100%;
+    width: 20em;
+    position: absolute;
+    top: 0;
+    left: -20em;
+    transition: 
+    500ms
+    cubic-bezier(.74,-0.03,.83,.67);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    z-index: 0;
+}
+
+/* Configurações do cabeçalho interno - lista */
+.menu ul {
+    margin: 3em;
+}
+
+.menu li {
+    padding: 0.5em 0;
+    margin: 0.5em 0;
+    border-bottom: 1px #191919 solid;
+}
+
+/* Configurações do cabeçalho interno - Abertura */
+.menu-open {
+    left: 3em;
+}
+
+/* Configurações da imagem da notícia */
+#news{
+    width: 30%;
+}
+
+/* Configurações da imagem do Marista */
+#marista{
+    width: 55%;
+}
+
+/* Configuração do corpo do progresso */
+.progresss {
+    width: 50%;
+    height: 2px;
+    background: #191919;
+}
+
+/* Configuração do progresso */
+.progresss div {
+    width: 100%;
+    height: 100%;
+    background: #F36008;
+    transition: 0.3s;
+}
+
+/* Configurações das opções de notícias */
+.slider-cntrl {
+    font-size: 0.8em;
+    cursor: pointer;
+    transition: 0.3s;
+    transform: none;
+}
+
+/* Configurações das opções de notícias - (Depois) */
+.slider-cntrl:hover {
+    color: #fff;
+}
+
+.active {
+    color: #fff;
+}
+
+/* Configurações do texto - Project TCC */
+.Project {
+    font-size: 4.5em;
+    line-height: 1.2em;
+    margin: 0.5em 0;
+}
+
+/* Configurações para animação do JS */
+.pagination-mobile {
+    display: none;
+}
+
+/* Configurações para animação do JS */
+.pagination-mobile li {
+    background: var(--secondary);
+    margin: 0 0.7em 0 0;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Configurações para animação do JS */
+.pagination-mobile .pag-active {
+    background: #F36008;
+}
+
+/* Configurações do footer */
+.footer-home {
+    background: #0D0D0D;
+    backdrop-filter: blur(10px);
+    
+}
+
+/* Configurações do footer e alinhamento - Tamanho da área */
+.footer-home .container > div {
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* Configurações do footer e alinhamento */
+.align-footer {
+    padding: 1.5em 2em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Configurações do footer e alinhamento - Direita */
+.align-footer small:nth-of-type(1){
+    color: var(--secondary);
+}
+
+#small{
+    margin-top: -45px;
+    text-align: justify;
+}
+
+/* Configurações do footer - Saiba mais */
+.footer-home a {
+    margin-top: 1em;
+    color: #F36008;
+    font-weight: 600;
+    letter-spacing: 2px;
+    position: absolute;
+    margin-top: 100px;
+
+    
+    transition: 0.3s;
+    
+    
+}
+
+.footer-home a:hover {
+    color: #F2A41C;
+}
+
+/* Color Theme Swatches in Hex */
+.Impermanence-1-hex { color: #D9D9D9; }
+.Impermanence-2-hex { color: #A6A6A6; }
+.Impermanence-3-hex { color: #737373; }
+.Impermanence-4-hex { color: #262626; }
+.Impermanence-5-hex { color: #0D0D0D; }
+
+/* Color Theme Swatches in RGBA */
+.Impermanence-1-rgba { color: rgba(217, 217, 217, 1); }
+.Impermanence-2-rgba { color: rgba(166, 166, 166, 1); }
+.Impermanence-3-rgba { color: rgba(115, 115, 115, 1); }
+.Impermanence-4-rgba { color: rgba(38, 38, 38, 1); }
+.Impermanence-5-rgba { color: rgba(13, 13, 13, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Impermanence-1-hsla { color: hsla(0, 0, 85, 1); }
+.Impermanence-2-hsla { color: hsla(0, 0, 65, 1); }
+.Impermanence-3-hsla { color: hsla(0, 0, 45, 1); }
+.Impermanence-4-hsla { color: hsla(0, 0, 14, 1); }
+.Impermanence-5-hsla { color: hsla(0, 0, 5, 1); }
+
+/* Color Theme Swatches in Hex */
+.fogo---foguete-Tati-1-hex { color: #F4D33B; }
+.fogo---foguete-Tati-2-hex { color: #F2A41C; }
+.fogo---foguete-Tati-3-hex { color: #F07508; }
+.fogo---foguete-Tati-4-hex { color: #F36008; }
+.fogo---foguete-Tati-5-hex { color: #8C1C01; }
+
+/* Color Theme Swatches in RGBA */
+.fogo---foguete-Tati-1-rgba { color: rgba(244, 211, 59, 1); }
+.fogo---foguete-Tati-2-rgba { color: rgba(242, 164, 28, 1); }
+.fogo---foguete-Tati-3-rgba { color: rgba(240, 117, 8, 1); }
+.fogo---foguete-Tati-4-rgba { color: rgba(243, 96, 8, 1); }
+.fogo---foguete-Tati-5-rgba { color: rgba(140, 28, 1, 1); }
+
+/* Color Theme Swatches in HSLA */
+.fogo---foguete-Tati-1-hsla { color: hsla(49, 89, 59, 1); }
+.fogo---foguete-Tati-2-hsla { color: hsla(38, 89, 52, 1); }
+.fogo---foguete-Tati-3-hsla { color: hsla(28, 93, 48, 1); }
+.fogo---foguete-Tati-4-hsla { color: hsla(22, 93, 49, 1); }
+.fogo---foguete-Tati-5-hsla { color: hsla(11, 98, 27, 1); }

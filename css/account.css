@@ -1,0 +1,354 @@
+/* CSS da página da account */
+
+/* Google Fonts - Poppins */
+
+
+/* Configurações do formato */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu';
+}
+
+/* Cor de fundo */
+body{
+    background-image: linear-gradient(
+        90deg, #232326, #131314);
+}
+
+/* Container do form - direita */
+.right{
+    margin-left: 500px;
+}
+
+/* Container do form */
+.container{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+}
+
+/* Form */
+.form{
+    position: absolute;
+    height: 60%;
+    width: 40%;
+    padding: 30px;
+}
+
+/* Cadastrar */
+.form.signup{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.forms.show-signup .form.signup{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.forms.show-signup .form.login{
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Título - Conta/Cadastrar */
+header{
+    font-size: 28px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    margin-top: -75px;
+    
+}
+
+/* Configurações dos botões - Funcionais */
+.form .field{
+    position: relative;
+    height: 40px;
+    width: 100%;
+    margin-top: 5px;
+    border-radius: 6px;
+}
+
+/* Configurações dos botões - Dados */
+.field input,
+.field button{
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 6px;
+}
+
+/* Configurações do texto dos botões - Dados */
+.field input{
+    outline: none;
+    padding: 0 15px;
+    border: 1px solid#CACACA;
+    background-color: #131314;
+    color: #fff;
+}
+
+.field input:focus{
+    border-bottom-width: 2px;
+}
+
+/* Configurações do olho visualizador da senha - Dados */
+.eye-icon{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #8b8b8b;
+    cursor: pointer;
+    padding: 5px;
+}
+
+/* Configurações do botão - Entrar */
+.field button{
+    color: #fff;
+    background-color: #F36008;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+/* Configurações do botão - Entrar (Depois) */
+.field button:hover{
+    transform: scale(1.03);
+    box-shadow: 1px 1px 10px #F36008;
+}
+
+/* Configurações da centralização dos textinhos de auxílio */
+.form-link{
+    text-align: center;
+    margin-top: 5px;
+}
+
+/* Configurações da cor - Não Tem uma conta? */
+.form-link span,
+.form-link a{
+    font-size: 12px;
+    font-weight: 400;
+    color: #a2a2a2;
+}
+
+/* Configurações da cor dos textinhos de auxílio */
+.form a{
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Configurações da linha - Ou */
+.line{
+    position: relative;
+    height: 1px;
+    width: 100%;
+    margin: 36px 0;
+    background-color: #d4d4d4;
+}
+
+/* Configurações do bloco - Ou */
+.line::before{
+    content: 'Ou';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFF;
+    color: #8b8b8b;
+    padding: 0 15px;
+    font-size: 14px;
+}
+
+/* Configurações do texto - Facebook e Google */
+.media-options a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+/* Configurações do icon - Facebook */
+.face{
+    color: #fff;
+    margin-right: 10px;
+    z-index: 20;
+}
+
+/* Configurações do icon - Google */
+.goo{
+    color: #000;
+    margin-right: 10px;
+    z-index: 20;
+}
+
+/* Configurações do botão - Facebook */
+a.facebook{
+    color: #fff;
+    background-color: #4267b2;
+    transition: 0.3s;
+}
+
+/* Configurações do botão - Facebook (Depois) */
+a.facebook:hover{
+    transform: scale(1.03); 
+    box-shadow: 1px 1px 10px #4267b2;
+}
+
+/* Configurações do botão - Google */
+a.google{
+    color: #000;
+    background-color: #fff;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+/* Configurações do botão - Google (Depois) */
+a.google:hover{
+    color: #000;
+    transform: scale(1.03); 
+    box-shadow: 1px 1px 10px #fff;
+}
+
+/* Configurações do icon - Voltar */
+.cb{
+    color: #fff;
+}
+
+/* Container do form - esquerda */
+.footer-account{
+    width: 530px;
+    margin-top: -620px;
+    height: 653px;
+    color: #4f4f4f;
+    background: rgba(5, 5, 5, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+/* Textos do container do form - esquerda */
+.align-account {
+    padding: 1.5em 2em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Configurações do aviso - esquerda */
+small{
+    color: #a2a2a2;
+    text-align: justify;
+    padding-top: 10px;
+    margin-top: 400px;
+}
+
+/* Configurações do texto - Voltar */
+.footer-account a {
+    text-decoration: none;
+    transition: 0.3s;
+    color: var(--accent);
+    margin-left: 5px;
+}
+
+/* Configurações do texto - Voltar (Depois) */
+a:hover {
+    color: #fff;
+}
+
+/* Configurações doe ocultar */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Configurações da linha - Voltar */
+li {
+    padding: 0.5em 0;
+    margin: 0.5em 0;
+    border-bottom: 1px #191919 solid;
+    width: 90px;
+}
+
+  
+/* Configurações da ocupação da iluminária */
+.lamp-container{
+    position: absolute;
+    top: -80px;
+    left: 34.5%;
+    width: 175px;
+}
+
+/* Configurações do tamanho da iluminária */
+.lamp{
+    width: 100%;
+}
+
+/* Configurações da luz */
+.light{
+    position: absolute;
+    top: 88%;
+    left: 52%;
+    transform: translateX(-50%);
+    width: 500px;
+    margin-left: -10px;
+    opacity: 0;
+    transition: opacity 0.5s;
+    z-index: -5;
+}
+
+/* Configurações do corpo do interruptor - Desligado */
+.but{
+    background: #efefef;
+    height: 28px;
+    width: 58px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 0.5s;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+/* Configurações do interruptor - Desligado */
+.but span{
+    display: block;
+    background: #a2a2a2;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    margin-left: 2px;
+    margin-top: 2px;
+    transition: background 0.5s, margin-left 0.5s;
+}
+
+/* Configurações do interruptor - Ligado (Depois) */
+.active{
+    background: #F27F3D;
+    box-shadow: 0 0 8px #F27F3D;
+}
+  
+.active[type="button"]{
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+/* Configurações do interruptor - Ligado */
+.active span{
+    background: #fff;
+    margin-left: 31px;
+}
+
+/* Configuração de fazer a luz ligar */
+.on{
+    opacity: 1;
+}

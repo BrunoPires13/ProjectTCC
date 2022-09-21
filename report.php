@@ -55,10 +55,10 @@
 
             <!-- Páginas de seleção -->
             <ul>
-                <li><a href="home.html">Início</a></li>
+                <li><a href="index.php">Início</a></li>
                 <li><a href="#">Artigos</a></li>
                 <li><a href="#" class="link-active" style="text-shadow: 5px 5px 30px #F36008; color:#F36008">Denuncie</a></li>
-                <li><a href="team.html">Equipe</a></li>
+                <li><a href="team.php">Equipe</a></li>
             </ul>
 
             <!-- Icon menu -->
@@ -73,10 +73,7 @@
 <div class="header-body">
     <div class="container">
         <div class="contactUs">
-
-
-    <i class="imap fa-solid fa-map-location-dot"></i>
-            
+      
 <!-- Caixa corporal -->
     <div class="box">
                 
@@ -95,7 +92,7 @@
 <div class="contact form" id="formation">
        
 <!-- Area do form -->
-<form>
+<form action="" method="">
     
 <!-- Título do form -->
 <h3>Denuncie já</h3>
@@ -105,17 +102,17 @@
 
     <div id="form-pt1" class="fBox">
 
-<!-- Endereço -->
+<!-- Referência -->
         <div class="field input-field">
                                 
-            <input type="text" placeholder="Endereço de destino">
+            <input type="text" maxlength="100" placeholder="Ponto de referência">
 
         </div>
 
-<!-- Residência -->
+<!-- Endereço -->
         <div class="field input-field">
                                 
-            <input type="text" placeholder="Número da residência" maxlength="4" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+            <input type="text" maxlength="100" placeholder="Endereço de destino">
 
         </div>
 
@@ -144,8 +141,8 @@
             
         <div class="field input-field">
                      
-<!-- Referência -->
-            <input id="form-pt20" type="text" placeholder="Ponto de referência">
+<!-- Residência -->
+            <input id="form-pt20" type="text" maxlength="4" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Número da residência" >
 
         </div>
 
@@ -156,7 +153,7 @@
 <!-- Mensagem -->
         <div id="form-pt3" class="field textarea-field">
                                 
-            <textarea type="text" placeholder="Escreva sua mensagem aqui..."></textarea>
+            <textarea type="text" maxlength="500" placeholder="Escreva sua mensagem aqui..."></textarea>
 
         </div>
     
@@ -253,7 +250,7 @@
 <!-- Segundo corpo do site -->
 <div class="menu">
     <ul>
-        <li><i class="fa-regular fa-user"></i><a href="account.html">Conta</a></li>
+        <li><i class="fa-regular fa-user"></i><a href="account.php">Conta</a></li>
         <li><i class="fa-solid fa-map-pin"></i><a href="#">Denúncias</a></li>
     </ul>
     

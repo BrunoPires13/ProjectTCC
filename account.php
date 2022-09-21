@@ -43,7 +43,7 @@
 <!-- Entrar -->]
 <header>Conta</header>
 
-<form action="#">
+<form action="#" method="">
     <div class="field input-field">
         <input type="email" placeholder="Email" class="input"> 
     </div>
@@ -97,7 +97,7 @@
 <!-- Cadastrar -->
 <header>Cadastro</header>
 
-<form action="#">
+<form action="#" method="">
     <div class="field input-field">
         <input type="text" placeholder="Crie um nome de usuário" class="input">
     </div>
@@ -161,7 +161,7 @@
     <div class="align-account"> <br>           
             
     <ul>
-        <li><i class="cb fa-regular fa-circle-left"></i><a href="home.html">Voltar</a>
+        <li><i class="cb fa-regular fa-circle-left"></i><a href="index.php">Voltar</a>
         </li>
     </ul>
 

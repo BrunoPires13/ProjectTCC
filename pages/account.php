@@ -13,7 +13,7 @@
 <title> Account </title>
 
 <!-- CSS -->
-<link rel="stylesheet" href="css/account.css">
+<link rel="stylesheet" href="./../css/account.css">
 
 <!-- Icons -->
 <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
@@ -45,11 +45,11 @@
 
 <form action="#" method="">
     <div class="field input-field">
-        <input type="email" placeholder="Email" class="input"> 
+        <input type="email" placeholder="Email" class="input" required> 
     </div>
 
     <div class="field input-field">
-        <input type="password" placeholder="Senha" class="password">
+        <input type="password" placeholder="Senha" class="password" required>
         <i class='bx bx-hide eye-icon'></i>
     </div>
 
@@ -99,19 +99,19 @@
 
 <form action="#" method="">
     <div class="field input-field">
-        <input type="text" placeholder="Crie um nome de usuário" class="input">
+        <input type="text" placeholder="Crie um nome de usuário" class="input" required>
     </div>
 
     <div class="field input-field">
-        <input type="email" placeholder="Insira um endereço de Email" class="input">
+        <input type="email" placeholder="Insira um endereço de Email" class="input" required>
     </div>
 
     <div class="field input-field">
-        <input type="password" placeholder="Crie uma Senha" class="password">
+        <input type="password" placeholder="Crie uma Senha" class="password" required>
     </div>
 
     <div class="field input-field">
-        <input type="password" placeholder="Confirme a senha" class="password">
+        <input type="password" placeholder="Confirme a senha" class="password" required>
         <i class='bx bx-hide eye-icon'></i>
     </div>
 
@@ -152,8 +152,8 @@
 <!-- Div que leva o form para a esquerda -->
 <div class="footer-account">
     <div class="lamp-container">
-        <img src="img/lamp.png" class="lamp">
-        <img src="img/light.png" class="light" id="light">
+        <img src="./../img/lamp.png" class="lamp">
+        <img src="./../img/light.png" class="light" id="light">
     </div>
     
 <!-- Div que organiza oque fica dentro -->
@@ -161,7 +161,7 @@
     <div class="align-account"> <br>           
             
     <ul>
-        <li><i class="cb fa-regular fa-circle-left"></i><a href="index.php">Voltar</a>
+        <li><i class="cb fa-regular fa-circle-left"></i><a href="../index.php">Voltar</a>
         </li>
     </ul>
 
@@ -173,7 +173,7 @@
 </main>
 
 <!-- JS do account -->
-<script src="js/account.js"></script>
+<script src="./../js/account.js"></script>
 
 </body>
 

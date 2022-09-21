@@ -13,8 +13,8 @@
 <title> Inicial </title>
 
 <!-- CSS -->
-<link rel='stylesheet' href='css/home.css'>
-<link rel="stylesheet" href="css/report.css">
+<link rel='stylesheet' href='./../css/home.css'>
+<link rel="stylesheet" href="./../css/report.css">
 
 <!-- Icons -->
 <script src="https://kit.fontawesome.com/0d966a43c2.js" crossorigin="anonymous"></script>
@@ -55,7 +55,7 @@
 
             <!-- Páginas de seleção -->
             <ul>
-                <li><a href="index.php">Início</a></li>
+                <li><a href="../index.php">Início</a></li>
                 <li><a href="#">Artigos</a></li>
                 <li><a href="#" class="link-active" style="text-shadow: 5px 5px 30px #F36008; color:#F36008">Denuncie</a></li>
                 <li><a href="team.php">Equipe</a></li>
@@ -274,4 +274,4 @@
 </html>
 
 <!-- JS do report -->
-<script type="text/javascript" src="js/report.js"></script>
+<script type="text/javascript" src="./../js/report.js"></script>

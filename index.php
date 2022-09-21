@@ -56,8 +56,8 @@
             <ul>
                 <li><a href="#" class="link-active" style="text-shadow: 5px 5px 30px #F36008; color:#F36008">Início</a></li>
                 <li><a href="#">Artigos</a></li>
-                <li><a href="report.php">Denuncie</a></li>
-                <li><a href="team.php">Equipe</a></li>
+                <li><a href="pages/report.php">Denuncie</a></li>
+                <li><a href="pages/team.php">Equipe</a></li>
             </ul>
 
             <!-- Icon menu -->
@@ -138,8 +138,8 @@
 <!-- Segundo corpo do site -->
     <div class="menu">
         <ul>
-            <li><i class="fa-regular fa-user"></i><a href="account.php">Conta</a></li>
-            <li><i class="fa-solid fa-map-pin"></i><a href="#">Denúncias</a></li>
+            <li><i class="fa-regular fa-user"></i><a href="pages/account.php">Conta</a></li>
+            <li><i class="fa-solid fa-map-pin"></i><a href="pages/report.php">Denúncias</a></li>
         </ul>
         
         <ul>

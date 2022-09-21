@@ -13,8 +13,8 @@
 <title> Team </title>
 
 <!-- CSS -->
-<link rel="stylesheet" href="css/team.css">
-<link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="./../css/team.css">
+<link rel="stylesheet" href="./../css/home.css">
 
 <!-- Icons -->
 <script src="https://kit.fontawesome.com/0d966a43c2.js" crossorigin="anonymous"></script>  
@@ -55,7 +55,7 @@
 
             <!-- Páginas de seleção -->
             <ul>
-                <li><a href="index.php">Início</a></li>
+                <li><a href="../index.php">Início</a></li>
                 <li><a href="#">Artigos</a></li>
                 <li><a href="report.php">Denuncie</a></li>
                 <li><a href="#" class="link-active" style="text-shadow: 5px 5px 30px #F36008; color:#F36008">Equipe</a></li>
@@ -108,12 +108,12 @@
         <i class="fa-solid fa-check"></i>
 
 <!-- Foto do membro -->
-        <img alt="img" class="icone" id="profession" src="img/i1.png" >
+        <img alt="img" class="icone" id="profession" src="./../img/i1.png" >
     </div>
 
 <!-- Nome e email -->
     <div class="photo">
-        <img alt="img" class="img" src="img/g1.png">
+        <img alt="img" class="img" src="./../img/g1.png">
         <strong class="title">Bruno Matheus</strong>
         <h5 class="sub-title">bruno.pires0422@gmail.com</h5>
     </div>
@@ -188,4 +188,4 @@
 </html>
 
 <!-- JS do team -->
-<script type="text/javascript" src="js/team.js"></script>
+<script type="text/javascript" src="./../js/team.js"></script>

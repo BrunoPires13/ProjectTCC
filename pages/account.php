@@ -43,13 +43,13 @@
 <!-- Entrar -->]
 <header>Conta</header>
 
-<form action="#" method="">
+<form action="../methods/login.php" method="post">
     <div class="field input-field">
-        <input type="email" placeholder="Email" class="input" required> 
+        <input type="email" name="email" placeholder="Email" class="input" required> 
     </div>
 
     <div class="field input-field">
-        <input type="password" placeholder="Senha" class="password" required>
+        <input type="password" name="password" placeholder="Senha" class="password" required>
         <i class='bx bx-hide eye-icon'></i>
     </div>
 
@@ -58,7 +58,7 @@
         </div>
 
     <div class="field button-field">
-        <button>Entrar</button>
+        <button type="submit">Entrar</button>
     </div>
 </form>
 
@@ -97,17 +97,17 @@
 <!-- Cadastrar -->
 <header>Cadastro</header>
 
-<form action="#" method="">
+<form action="../methods/cadastro.php" method="post">
     <div class="field input-field">
-        <input type="text" placeholder="Crie um nome de usuário" class="input" required>
+        <input type="text" placeholder="Crie um nome de usuário" class="input" name="nome" required>
     </div>
 
     <div class="field input-field">
-        <input type="email" placeholder="Insira um endereço de Email" class="input" required>
+        <input type="email" placeholder="Insira um endereço de Email" class="input" name="email" required>
     </div>
 
     <div class="field input-field">
-        <input type="password" placeholder="Crie uma Senha" class="password" required>
+        <input type="password" placeholder="Crie uma Senha" class="password" name="senha" required>
     </div>
 
     <div class="field input-field">
@@ -116,7 +116,7 @@
     </div>
 
     <div class="field button-field">
-        <button>Cadastrar</button>
+        <button type="submit">Cadastrar</button>
     </div>
 </form>
 

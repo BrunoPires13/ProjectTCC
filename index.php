@@ -1,3 +1,13 @@
+<?php
+session_start();
+
+require_once('methods/verification.php');
+
+verification('pages/login.page.php');
+
+?>
+
+
 <!DOCTYPE html>
 
 <!-- HTML da página do home -->
@@ -20,7 +30,7 @@
 
 </head>
 
-<body>
+<body class="body">
 
 <!-- Cabeçalho lateral -->
 <header>
@@ -53,7 +63,7 @@
             </div>
 
             <!-- Páginas de seleção -->
-            <ul>
+            <ul class="vai">
                 <li><a href="#" class="link-active" style="text-shadow: 5px 5px 30px #F36008; color:#F36008">Início</a></li>
                 <li><a href="#">Artigos</a></li>
                 <li><a href="pages/report.php">Denuncie</a></li>
@@ -70,11 +80,20 @@
 <!-- Corpo secundário do site -->
 <div class="header-body">
     <div class="container">
+
+<!-- Nome do projeto -->
+<div>          
+    <h1 class="Project">Project TCC</h1>
+        <div class="Projec2">
+        <p> Um projeto dedicado a segurança pública em relação a iluminação urbana noturna. Por um mundo mais iluminado! </p> 
+        </div>
+</div>
+
         <div class="slider">
                 
 <!-- Sites de notícias -->
-            <div>
-                <h1 class="slider-count"> Sites </h1> <br>
+            <div id="Project">
+                <h1 class="slider-count"> Sites de notícia </h1> <br>
                 
                 <div class="progresss">
                 <div></div>
@@ -90,12 +109,6 @@
             </div>
         </div>
 
-<!-- Nome do projeto -->
-<div>          
-    <h1 class="Project">Project TCC</h1>
-        <p> Um projeto dedicado a segurança pública em relação a iluminação urbana noturna. Por um mundo mais iluminado! </p>          
-</div>
-
     </div>
 </div>
 
@@ -107,27 +120,31 @@
 </ul>
 
 <!-- Div do footer -->
-<div class="footer-home">
+<div>
     <div class="container">
             <div>
 
 <!-- Lado esquerdo do footer -->
                 <div class="align-footer">
                     <img id="marista" src="img/marista.png"> <br>
-                    <small> Copyright ©2022 Project TCC. designed by iLume </small>
+                    <small class="copyright"> Copyright ©2022 Project TCC. designed by iLume </small>
                 </div>  
             </div>
 
 <!-- Lados direito do footer -->
-            <div>
+            <div class="footer-home">
                 <img id="news" src="img/copel.png"
                 alt="img" class="img">
                 <div class="align-footer">
-                    
+                    <div class="copel">
                     <small id="small" class="title">
                         Copel – Companhia Paranaense de Energia: gera, transmite, distribui e comercializa energia. A empresa é uma das maiores companhias elétricas do Brasil.
                     </small>
+                    <div class="Saiba">
                     <a href="#">Saiba mais</a>
+                    </div>
+                </div>
+                    
                 </div>
             </div>
     </div>
@@ -138,7 +155,7 @@
 <!-- Segundo corpo do site -->
     <div class="menu">
         <ul>
-            <li><i class="fa-regular fa-user"></i><a href="pages/account.php">Conta</a></li>
+            <li><i class="fa-regular fa-user"></i><a href="pages/profile.php">Conta</a></li>
             <li><i class="fa-solid fa-map-pin"></i><a href="pages/report.php">Denúncias</a></li>
         </ul>
         
@@ -161,3 +178,4 @@
 </html>
 
 <script type="text/javascript" src="js/home.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

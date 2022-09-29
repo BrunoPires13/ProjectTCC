@@ -10,15 +10,16 @@ require_once('conn.php');
     $result->execute(['email_usuario' => $email_usuario, 'senha_usuario' => $senha_usuario]);
     $user = $result->fetch();
 
-    if (!empty($user)){
-        session_start();
+if (!empty($user)){
+    session_start();
 
 
-        $_SESSION['id_usuario'] = $user['id_usuario'];
-        header('location: ../');
-    } else{
-        echo 'Usuario não cadastrado!';
-    }
+    $_SESSION['id_usuario'] = $user['id_usuario'];
+    header('location: ../pages/profile.php');
+} else{
+    echo '<script>alert("Usuario não cadastrado!")</script>';
+    header('location: ../pages/account.php');
+}
 
 
 ?>

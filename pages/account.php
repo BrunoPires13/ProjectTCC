@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 
 <!-- HTML da página do account -->
@@ -17,6 +18,7 @@
 
 <!-- Icons -->
 <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/0d966a43c2.js" crossorigin="anonymous"></script>  
                 
 </head>
@@ -29,7 +31,7 @@
 <div class="right">
 
 <!-- Botão de ligar a luminária -->
-<button class="but" type="button" onclick="toggleBtn()" id="btn"><span></span>></button>
+<button class="but" type="button" onclick="toggleBtn()" id="btn"><span></span></button>
 
 <!-- Section dos forms -->
 <section class="container forms">
@@ -60,6 +62,7 @@
     <div class="field button-field">
         <button type="submit">Entrar</button>
     </div>
+    
 </form>
 
         <div class="form-link">
@@ -161,7 +164,7 @@
     <div class="align-account"> <br>           
             
     <ul>
-        <li><i class="cb fa-regular fa-circle-left"></i><a href="../index.php">Voltar</a>
+        <li><i class="cb fa-regular fa-circle-left"></i><a href="../">Voltar</a>
         </li>
     </ul>
 

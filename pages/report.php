@@ -250,7 +250,7 @@
 <!-- Segundo corpo do site -->
 <div class="menu">
     <ul>
-        <li><i class="fa-regular fa-user"></i><a href="account.php">Conta</a></li>
+        <li><i class="fa-regular fa-user"></i><a href="profile.php">Conta</a></li>
         <li><i class="fa-solid fa-map-pin"></i><a href="#">Denúncias</a></li>
     </ul>
     

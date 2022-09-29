@@ -352,3 +352,9 @@ li {
 .on{
     opacity: 1;
 }
+
+.logout{
+    padding: 5px;
+    border-radius: 6px;
+
+}

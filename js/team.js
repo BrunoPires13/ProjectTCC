@@ -65,19 +65,19 @@ const tit2 = [
 ];
 
 const img = [
-    'img/g1.png',
-    'img/g2.png',
-    'img/g3.png',
-    'img/g4.png',
-    'img/g5.png',
+    './../img/g1.png',
+    './../img/g2.png',
+    './../img/g3.png',
+    './../img/g4.png',
+    './../img/g5.png',
 ];
 
 const icones = [
-    'img/i1.png',
-    'img/i2.png',
-    'img/i3.png',
-    'img/i4.png',
-    'img/i5.png',
+    './../img/i1.png',
+    './../img/i2.png',
+    './../img/i3.png',
+    './../img/i4.png',
+    './../img/i5.png',
 ];
 
 const progressWidth = [

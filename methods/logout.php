@@ -1,6 +1,6 @@
 <?php
 
     session_destroy();
-    header('location: ../pages/login.page.php');
+    header('location: ../pages/account.php');
 
 ?>

@@ -1,34 +1,20 @@
 /* CSS da página do home */
 
-/* Cores */
-:root{
-    --primary: #fff;
-    --secondary: #A6A6A6;
-    --accent: #F36008;
-    --test: blue;
-}
-
-
-
-
 body{
     margin:0;
-    background-image: linear-gradient(
-        90deg, #232326, #131314);
-        
     overflow-x: hidden;
+    background: rgba(19, 19, 20, 1);
 }
 
-
+.body{
+    position: fixed;
+}
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Ubuntu';
-  
-  
-  
 }
 
 /* Scroll da página */
@@ -37,26 +23,27 @@ body{
 }
 
 ::-webkit-scrollbar-track {
-    background: #0D0D0D;
-    border-right: 1px #373739 solid;
+    background: rgba(13, 13, 13, 1);
+    border-right: 1px rgba(44, 44, 46, 1) solid;
 }
 
 /* Configurações dos textos do cabeçalho */
 a {
     text-decoration: none;
     transition: 0.3s;
-    color: #737373;
+    color: rgba(115, 115, 115, 1);
     margin-left: 5px;
 }
 
 /* Configurações dos textos do cabeçalho - (Depois) */
 a:hover {
-    color: #fff; 
+    color: rgba(255, 255, 255, 1); 
 }
 
 /* Configurações do texto - Project TCC */
 p {
-    color: var(--secondary);
+    color: rgba(115, 115, 115, 1);
+    max-width: 500px;
 }
 
 /* Configurações doe ocultar */
@@ -79,9 +66,8 @@ ul {
 
 /* Configurações da ocupação do site todo */
 header {
-    background-color: linear-gradient(90deg, #262626, #0D0D0D);
     min-height: 100vh;
-    color: #fff;
+    color: rgba(255, 255, 255, 1);
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -111,7 +97,7 @@ nav .container,
 
 /* iLume - Cor */
 #menu-btn {
-    color: #737373;
+    color: rgba(44, 44, 46, 1);
     transition: 0.3s;
 }
 
@@ -124,13 +110,13 @@ nav ul {
 
 /* Linha de destaque no cabeçalho */
 .link-active {
-    color: #F36008;
-    border-bottom: 2px #F36008 solid;
+    color: rgba(243, 96, 8, 1);
+    border-bottom: 2px rgba(243, 96, 8, 1) solid;
 }
 
 /* Configurações do cabeçalho lateral */
 .menu-btn {
-    background: #0D0D0D;
+    background: rgba(13, 13, 13, 1);
     backdrop-filter: blur(10px);
     padding: 2.2em;
     cursor: pointer;
@@ -151,12 +137,12 @@ nav .menu-btn {
 
 /* Configurações dos icons laterais */
 aside {
-    background: #232326;
+    background: rgba(19, 19, 20, 1);
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    border-right: 1px #373739 solid;
+    border-right: 1px rgba(44, 44, 46, 1) solid;
     position: relative;
     z-index: 1;
 }
@@ -196,7 +182,7 @@ aside {
 
 /* Configurações do cabeçalho interno */
 .menu {
-    background: #0D0D0D;
+    background: rgba(13, 13, 13, 1);
     padding: 2em;
     height: 100%;
     width: 20em;
@@ -219,7 +205,7 @@ aside {
 .menu li {
     padding: 0.5em 0;
     margin: 0.5em 0;
-    border-bottom: 1px #191919 solid;
+    border-bottom: 1px rgba(44, 44, 46, 1) solid;
 }
 
 /* Configurações do cabeçalho interno - Abertura */
@@ -229,26 +215,34 @@ aside {
 
 /* Configurações da imagem da notícia */
 #news{
-    width: 30%;
+    width: 25%;
 }
 
 /* Configurações da imagem do Marista */
 #marista{
     width: 55%;
+    margin-left: 10px;
+}
+
+.copyright{
+    margin-left: 10px;
+    margin-top: 5px;
 }
 
 /* Configuração do corpo do progresso */
 .progresss {
-    width: 50%;
+    width: 275px;
     height: 2px;
-    background: #191919;
+    background: rgba(0, 0, 0, 1);
+    position: fixed;
+    margin-left: -15px;
 }
 
 /* Configuração do progresso */
 .progresss div {
     width: 100%;
     height: 100%;
-    background: #F36008;
+    background: rgba(243, 96, 8, 1);
     transition: 0.3s;
 }
 
@@ -262,11 +256,15 @@ aside {
 
 /* Configurações das opções de notícias - (Depois) */
 .slider-cntrl:hover {
-    color: #fff;
+    color: rgba(255, 255, 255, 1);
 }
 
 .active {
-    color: #fff;
+    color: rgba(255, 255, 255, 1);
+}
+
+#Project{
+    margin-left: 200px;
 }
 
 /* Configurações do texto - Project TCC */
@@ -283,7 +281,7 @@ aside {
 
 /* Configurações para animação do JS */
 .pagination-mobile li {
-    background: var(--secondary);
+    background: rgba(166, 166, 166, 1);
     margin: 0 0.7em 0 0;
     display: inline-block;
     width: 10px;
@@ -294,14 +292,30 @@ aside {
 
 /* Configurações para animação do JS */
 .pagination-mobile .pag-active {
-    background: #F36008;
+    background: rgba(243, 96, 8, 1);
 }
+
 
 /* Configurações do footer */
 .footer-home {
-    background: #0D0D0D;
+    background: rgba(13, 13, 13, 1);
     backdrop-filter: blur(10px);
-    
+    margin-top: 20px;
+    max-height: 155px;
+}
+
+.copel{
+    position: fixed;
+    margin-top: -275px;
+    margin-left: 150px;
+    width: 400px;
+    text-align: justify;
+}
+
+.Saiba{
+    position: fixed;
+    width: 1000px;
+    margin-top: -70px;
 }
 
 /* Configurações do footer e alinhamento - Tamanho da área */
@@ -320,7 +334,7 @@ aside {
 
 /* Configurações do footer e alinhamento - Direita */
 .align-footer small:nth-of-type(1){
-    color: var(--secondary);
+    color: rgba(115, 115, 115, 1);
 }
 
 #small{
@@ -331,60 +345,33 @@ aside {
 /* Configurações do footer - Saiba mais */
 .footer-home a {
     margin-top: 1em;
-    color: #F36008;
+    color: rgba(255, 255, 255, 1);
     font-weight: 600;
     letter-spacing: 2px;
     position: absolute;
     margin-top: 100px;
-
-    
     transition: 0.3s;
-    
-    
 }
 
 .footer-home a:hover {
-    color: #F2A41C;
+    color: rgba(243, 96, 8, 1);
 }
 
-/* Color Theme Swatches in Hex */
-.Impermanence-1-hex { color: #D9D9D9; }
-.Impermanence-2-hex { color: #A6A6A6; }
-.Impermanence-3-hex { color: #737373; }
-.Impermanence-4-hex { color: #262626; }
-.Impermanence-5-hex { color: #0D0D0D; }
+/* Color Theme Swatches in RGBA */
+.color-white-rgba { color: rgba(255, 255, 255, 1); }
+.color-writing-rgba { color: rgba(166, 166, 166, 1); }
+.color-dark-writing-rgba { color: rgba(115, 115, 115, 1); }
+.color-line-highlight-rgba { color: rgba(44, 44, 46, 1); }
+.color-background-rgba { color: rgba(19, 19, 20, 1); }
+.color-fotter-background-rgba { color: rgba(13, 13, 13, 1); }
+.color-progress-rgba { color: rgba(0, 0, 0, 1); }
 
 /* Color Theme Swatches in RGBA */
-.Impermanence-1-rgba { color: rgba(217, 217, 217, 1); }
-.Impermanence-2-rgba { color: rgba(166, 166, 166, 1); }
-.Impermanence-3-rgba { color: rgba(115, 115, 115, 1); }
-.Impermanence-4-rgba { color: rgba(38, 38, 38, 1); }
-.Impermanence-5-rgba { color: rgba(13, 13, 13, 1); }
-
-/* Color Theme Swatches in HSLA */
-.Impermanence-1-hsla { color: hsla(0, 0, 85, 1); }
-.Impermanence-2-hsla { color: hsla(0, 0, 65, 1); }
-.Impermanence-3-hsla { color: hsla(0, 0, 45, 1); }
-.Impermanence-4-hsla { color: hsla(0, 0, 14, 1); }
-.Impermanence-5-hsla { color: hsla(0, 0, 5, 1); }
-
-/* Color Theme Swatches in Hex */
-.fogo---foguete-Tati-1-hex { color: #F4D33B; }
-.fogo---foguete-Tati-2-hex { color: #F2A41C; }
-.fogo---foguete-Tati-3-hex { color: #F07508; }
-.fogo---foguete-Tati-4-hex { color: #F36008; }
-.fogo---foguete-Tati-5-hex { color: #8C1C01; }
+.color-primary-rgba { color: rgba(243, 96, 8, 1); }
+.color-facebook-rgba { color: rgba(66, 103, 178, 1); }
 
 /* Color Theme Swatches in RGBA */
 .fogo---foguete-Tati-1-rgba { color: rgba(244, 211, 59, 1); }
 .fogo---foguete-Tati-2-rgba { color: rgba(242, 164, 28, 1); }
 .fogo---foguete-Tati-3-rgba { color: rgba(240, 117, 8, 1); }
-.fogo---foguete-Tati-4-rgba { color: rgba(243, 96, 8, 1); }
 .fogo---foguete-Tati-5-rgba { color: rgba(140, 28, 1, 1); }
-
-/* Color Theme Swatches in HSLA */
-.fogo---foguete-Tati-1-hsla { color: hsla(49, 89, 59, 1); }
-.fogo---foguete-Tati-2-hsla { color: hsla(38, 89, 52, 1); }
-.fogo---foguete-Tati-3-hsla { color: hsla(28, 93, 48, 1); }
-.fogo---foguete-Tati-4-hsla { color: hsla(22, 93, 49, 1); }
-.fogo---foguete-Tati-5-hsla { color: hsla(11, 98, 27, 1); }

@@ -1,9 +1,10 @@
 <?php
-session_start();
 
-require_once('methods/verification.php');
+    session_start();
 
-verification('pages/login.page.php');
+    require_once("methods/verification.php");
+
+    verification("pages/account.php");
 
 ?>
 
@@ -85,6 +86,19 @@ verification('pages/login.page.php');
 <div>          
     <h1 class="Project">Project TCC</h1>
         <div class="Projec2">
+
+        <a href="methods/logout.php">
+            <button class="logout">Sair</button>
+        </a>
+
+    <?php
+
+
+          echo  'Seja bem-vindo ' . $_SESSION['id_usuario']; 
+
+
+    ?>
+
         <p> Um projeto dedicado a segurança pública em relação a iluminação urbana noturna. Por um mundo mais iluminado! </p> 
         </div>
 </div>

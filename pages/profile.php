@@ -2,12 +2,7 @@
 
     session_start();
 
-    require_once("../methods/verification.php");
-
-    verification("../pages/account.php");
-
 ?>
-
 
 
 
@@ -47,6 +42,12 @@
 <!-- Section dos forms -->
 <section class="container forms">
 
+    <?php
+
+          echo  '<h1>Usuario n°:</h1>' . $_SESSION['nome_usuario']; 
+
+    ?>
+
 
     <!-- <div class="field button-field"> -->
         <a href="../methods/logout.php">
@@ -70,7 +71,7 @@
     <div class="align-account"> <br>           
             
     <ul>
-        <li><i class="cb fa-regular fa-circle-left"></i><a href="../index.php">Voltar</a>
+        <li><i class="cb fa-regular fa-circle-left"></i><a href="../">Voltar</a>
         </li>
     </ul>
 

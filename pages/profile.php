@@ -44,7 +44,7 @@
 
     <?php
 
-          echo  '<h1>Usuario n°:</h1>' . $_SESSION['nome_usuario']; 
+          echo  '<p>Usuario n°:</p>' . $_SESSION['id_usuario']; 
 
     ?>
 

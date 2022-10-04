@@ -353,11 +353,15 @@ li {
     opacity: 1;
 }
 
-.logout{
-    padding: 5px;
-    border-radius: 6px;
-
+.logout button{
+        height: 100%;
+        width: 100%;
+        border: none;
+        font-size: 14px;
+        font-weight: 400;
+        border-radius: 6px;
 }
+
 
 p{
     color: #F36008;

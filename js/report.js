@@ -99,3 +99,13 @@ function getFile(fileName) {
   }
 }
 
+function msg(){ 
+  
+  var id_usuario = $_SESSION['id_usuario'];
+
+      if(!id_usuario){
+          window.alert("Favor preencher todos os campos");
+      } else{
+          window.location.href="../";
+  }
+}

@@ -14,10 +14,12 @@ if (!empty($user)){
     session_start();
 
 
-    $_SESSION['id_usuario'] = $user['id_usuario'];    
-    header('location: ../pages/profile.php');
+    $_SESSION['id_usuario'] = $user['id_usuario'];     
+    header('location: ../');
+
+
 } else{
-    echo 'Usuario não cadastrado!';
+    echo 'usuario não encontrado';
 }
 
 

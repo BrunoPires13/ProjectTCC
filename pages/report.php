@@ -1,3 +1,13 @@
+<?php
+
+session_start();
+
+require_once('../methods/verification.php');
+
+verification('../pages/account.php');
+
+?>
+
 <!DOCTYPE html>
 
 <!-- HTML da página do home -->
@@ -21,7 +31,7 @@
 
 </head>
 
-<body>
+<body onload="msg()">
 
 <!-- Cabeçalho lateral -->
 <header>

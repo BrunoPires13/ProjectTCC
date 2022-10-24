@@ -102,8 +102,8 @@ verification('../pages/account.php');
 <div class="contact form" id="formation">
        
 <!-- Area do form -->
-<form action="" method="">
-    
+<form action="../methods/denuncia.php" method="post">
+
 <!-- Título do form -->
 <h3>Denuncie já</h3>
 
@@ -115,14 +115,14 @@ verification('../pages/account.php');
 <!-- Referência -->
         <div class="field input-field">
                                 
-            <input type="text" maxlength="100" placeholder="Ponto de referência">
+            <input type="text" maxlength="100" placeholder="Ponto de referência" id="">
 
         </div>
 
 <!-- Endereço -->
         <div class="field input-field">
                                 
-            <input type="text" maxlength="100" placeholder="Endereço de destino">
+            <input type="text" maxlength="100" placeholder="Endereço de destino" name="cep_denuncia" id="">
 
         </div>
 
@@ -133,17 +133,17 @@ verification('../pages/account.php');
 <!-- Causa -->
         <div class="field select-field">
                                 
-            <select type="select">
+            <select type="select" name="causa_denuncia">
 
-            <option disabled selected hidden>Causa do incidente</option>
-            
-            <option value="valor1">Vandalismo</option>
-            <option value="valor2">Furto</option>
-            <option value="valor3">Evento climático</option>
-            <option value="valor4">Acidente rodoviário</option>
-            <option value="valor5">Falta de infraestrutura</option>
-            <option value="valor6">Queda de energia</option>
-            <option value="valor7">Outros</option>
+                <option disabled selected hidden id="">Causa do incidente</option>
+                
+                    <option value="Vandalismo">Vandalismo</option>
+                    <option value="Furto">Furto</option>
+                    <option value="Evento climático">Evento climático</option>
+                    <option value="Acidente rodoviário">Acidente rodoviário</option>
+                    <option value="Falta de infraestrutura">Falta de infraestrutura</option>
+                    <option value="Queda de energia">Queda de energia</option>
+                    <option value="Outros">Outros</option>
 
             </select>
 
@@ -152,7 +152,7 @@ verification('../pages/account.php');
         <div class="field input-field">
                      
 <!-- Residência -->
-            <input id="form-pt20" type="text" maxlength="4" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Número da residência" >
+            <input id="form-pt20" type="text" maxlength="4" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Número da residência" id="" name="num_residencia_denuncia">
 
         </div>
 
@@ -163,7 +163,7 @@ verification('../pages/account.php');
 <!-- Mensagem -->
         <div id="form-pt3" class="field textarea-field">
                                 
-            <textarea type="text" maxlength="500" placeholder="Escreva sua mensagem aqui..."></textarea>
+            <textarea type="text" maxlength="500" placeholder="Escreva sua mensagem aqui..." id="" name="ref_denuncia"></textarea>
 
         </div>
     
@@ -177,7 +177,7 @@ verification('../pages/account.php');
 
                     <div>
                         
-                        <input type="file" id="upload" style="display: none;">
+                        <input type="file" id="upload" style="display: none;" id="" name="arquivo_denuncia">
                         
                         <label for="upload">Nome do arquivo</label>
 

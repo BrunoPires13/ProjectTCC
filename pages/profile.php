@@ -51,8 +51,6 @@ verification('../pages/account.php');
 <!-- Entrar -->]
 <header>Perfil</header>
 
-
-
     <div class="field button-field">
         <a href="../methods/logout.php">
             <button type="submit">Sair</button>

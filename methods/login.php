@@ -17,9 +17,10 @@ if (!empty($user)){
     $_SESSION['id_usuario'] = $user['id_usuario'];     
     header('location: ../');
 
-
 } else{
-    echo 'usuario não encontrado';
+    echo "<script>alert('Usuario não registrado.');window.location.replace('../pages/account.php');</script>";
+    die();
+   
 }
 
 
